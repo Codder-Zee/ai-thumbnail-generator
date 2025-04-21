@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>AI YouTube Thumbnail Generator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Thumbnail Generator</h1>
+    <input type="file" id="uploadImage" accept="image/*">
+    <input type="text" id="titleText" placeholder="Enter Thumbnail Title">
+    <button onclick="generateThumbnail()">Generate Thumbnail</button>
+    <button onclick="removeBackground()">Remove Background</button>
+    <div id="thumbnailArea">
+      <canvas id="canvas" width="600" height="340"></canvas>
+    </div>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
